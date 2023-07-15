@@ -1,36 +1,21 @@
 html {
-  height:100vh;
+  height: 100vh;
   width: 100vw;
 }
-a {
-  color:black
-}
-a:hover {
-  color: darkviolet;
-}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #141414;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-}
-
-#root {
-  height: 100vh;
-  width: 100vw;
-  margin: 0;
-  background-image: linear-gradient(to bottom, aqua, yellow);
-  /* background-image: linear-gradient(to bottom, magenta, aqua); */
-  display: flex;
-  place-content: center;
-  place-items: center;
 }
 
 .container {
@@ -40,16 +25,16 @@ code {
 .profileImg {
   margin: auto;
   margin-top: 20px;
-  height:175px;
+  height: 175px;
   width: auto;
 }
 .box {
   place-items: center;
   justify-content: center;
-  display:flex;
+  display: flex;
   height: 48px;
   background: white;
-  width:50%;
+  width: 50%;
   margin: auto;
   margin-top: 20px;
   border-radius: 5px;
@@ -60,10 +45,69 @@ code {
 }
 .socialContainer {
   margin: 0px 10px 0px 10px;
-  transition-duration: .4s;
+  transition-duration: 0.4s;
 }
 .socialContainer:hover {
   transform: scale(1.5);
-  transition-duration: .4s;
+  transition-duration: 0.4s;
   cursor: pointer;
+}
+
+#headerBar {
+  background: transparent;
+  right: 0;
+  top: 0;
+  transition: all 0.5s ease;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+  display: flex;
+  min-height: 1.5rem;
+}
+#headerBar.expand {
+  width: 100vw;
+  transition: all 0.5s ease;
+  background: white;
+}
+
+.display {
+}
+.hide {
+  display: none;
+}
+
+.iconWrapper:hover .profileName,
+.iconWrapper:hover .avatarImg {
+  color: #fff;
+}
+.iconWrapper:hover .avatarImg {
+  border: 3px solid #fff;
+  cursor: pointer;
+}
+
+.loader {
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+  /* display: inline-block; */
+  border-top: 10px solid #e50914;
+  border-right: 10px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  z-index: 2;
+  position: absolute;
+}
+
+.rightNav:hover .caret {
+  transform: rotate(180deg);
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

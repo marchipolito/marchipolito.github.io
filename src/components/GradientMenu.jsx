@@ -1,0 +1,112 @@
+import React from "react";
+import styled from "styled-components";
+import Avatar from "./Avatar";
+import { useAppContextData } from "../context/AppContext";
+
+const GradientBar = styled.div`
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 10%, transparent);
+  //   background: linear-gradient(
+  //     180deg,
+  //     rgba(2, 0, 36, 1) 0%,
+  //     rgba(0, 255, 246, 1) 100%
+  //   );
+  z-index: 1;
+  height: 70px;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+const LeftNavContainer = styled.div``;
+const RightNavContainer = styled.div`
+  height: 200%;
+  display: flex;
+  align-items: center;
+  margin-right: 4vw;
+  position: relative;
+  // padding-bottom: 10px;
+  &:hover {
+    cursor: pointer;
+  }
+  &:hover .DropDown {
+    opacity: 1;
+    pointer-events: all;
+    z-index: 2;
+  }
+`;
+const MenuContainer = styled.ul`
+  display: flex;
+  padding: 0;
+`;
+const MenuItem = styled.li`
+  color: #e5e5e5;
+  list-style: none;
+  font-size: 14px;
+  margin-left: 20px;
+  &:hover {
+    cursor: pointer;
+  }
+  &:first-of-type {
+    margin-left: 4vw;
+  }
+`;
+
+const Caret = styled.span`
+  border-color: #fff transparent;
+  border-style: solid;
+  border-width: 5px 5px 0;
+  height: 0;
+  width: 1px;
+  transition: transform 367ms cubic-bezier(0.21, 0, 0.07, 1);
+  margin-left: 10px;
+`;
+
+const DropDown = styled.div`
+  position: absolute;
+  right: 0;
+  bottom: 0%;
+  padding: 10px 20px;
+  white-space: nowrap;
+  background: #141414;
+  color: #fff;
+  opacity: 0;
+  transition: 0.4s all ease;
+  // transition-delay: 0.2s;
+  pointer-events: none;
+
+  &:hover {
+    pointer-events: all;
+  }
+`;
+
+const GradientMenu = () => {
+  const { setContactMe } = useAppContextData();
+  return (
+    <GradientBar className="GradientBar">
+      <LeftNavContainer>
+        <MenuContainer>
+          <MenuItem>Home</MenuItem>
+          <MenuItem>Experience</MenuItem>
+          <MenuItem>Skills</MenuItem>
+          <MenuItem>Education</MenuItem>
+        </MenuContainer>
+      </LeftNavContainer>
+      <RightNavContainer className="rightNav">
+        <Avatar hidename mini />
+        <Caret className="caret" />
+        <DropDown
+          className="DropDown"
+          onClick={() => {
+            setContactMe(true);
+          }}
+        >
+          Contact Me
+        </DropDown>
+      </RightNavContainer>
+    </GradientBar>
+  );
+};
+export default GradientMenu;
