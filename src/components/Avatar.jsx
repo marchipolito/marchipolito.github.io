@@ -11,8 +11,6 @@ const IconWrapper = styled.div`
 const ProfileImg = styled.div`
   height: ${(props) => (props.mini ? "48px" : "10vw")};
   width: ${(props) => (props.mini ? "48px" : "10vw")};
-  max-width: 10vw;
-  max-height: 10vw;
   background: #141414;
   border-radius: 4px;
   margin: auto;
@@ -22,14 +20,19 @@ const ProfileImg = styled.div`
   border: 3px solid transparent;
   background-repeat: no-repeat;
 
-  // ${({ contactMe }) => contactMe && `background-image: url();`}
+  ${({ mini }) =>
+    mini
+      ? `max-width: 48px;
+  max-height: 48px;`
+      : `min-width: 140px;
+  min-height: 140px;`}
 `;
 
 const ContactImg = styled.div`
   height: ${(props) => (props.mini ? "48px" : "10vw")};
   width: ${(props) => (props.mini ? "48px" : "10vw")};
-  max-width: 10vw;
-  max-height: 10vw;
+  min-height: 140px;
+  min-width: 140px;
   background: #141414;
   border-radius: 4px;
   margin: auto;
@@ -51,7 +54,7 @@ const ContactImg = styled.div`
 
 const ProfileName = styled.div`
   color: gray;
-  font-size: 1.3vw;
+  font-size: 20px;
   text-align: center;
   margin: 0.6em 0;
   display: ${(props) => (props.hidename ? "none" : "")};
