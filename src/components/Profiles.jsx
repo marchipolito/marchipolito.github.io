@@ -29,7 +29,7 @@ const UserWrapper = styled.div`
 `;
 const WhoThis = styled.h1`
   color: #fff;
-  font-size: 3.4vw;
+  font-size: clamp(2em, 3em, 3em);
   font-weight: 400;
   text-align: center;
   letter-spacing: 2px;
