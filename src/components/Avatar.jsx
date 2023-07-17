@@ -22,10 +22,8 @@ const ProfileImg = styled.div`
 
   ${({ mini }) =>
     mini
-      ? `max-width: 48px;
-  max-height: 48px;`
-      : `min-width: 140px;
-  min-height: 140px;`}
+      ? `min-width:48px;min-height:48px;`
+      : `min-width:140px;min-height:140px;`}
 `;
 
 const ContactImg = styled.div`
@@ -48,13 +46,11 @@ const ContactImg = styled.div`
   &:hover {
     background: #fff;
   }
-
-  // ${({ contactMe }) => contactMe && `background-image: url();`}
 `;
 
 const ProfileName = styled.div`
   color: gray;
-  font-size: 20px;
+  font-size: clamp(16px, 20px, 20px);
   text-align: center;
   margin: 0.6em 0;
   display: ${(props) => (props.hidename ? "none" : "")};

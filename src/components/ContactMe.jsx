@@ -20,7 +20,8 @@ const HeaderRow = styled.div`
 `;
 const Header = styled.h1`
   color: #ffffff;
-  font-size: 3vw;
+  // font-size: 3vw;
+  font-size: clamp(42px, 5vw, 5vw);
 `;
 
 const InputSection = styled.div`
@@ -48,7 +49,7 @@ const TextInput = styled.input`
   // width: 18em;
   width: 100%;
   margin-bottom: 1.5vw;
-  font-size: 1.5vw;
+  // font-size: 1.5vw;
   &::placeholder {
     color: lightgray;
   }
@@ -68,7 +69,7 @@ const TextArea = styled.textarea`
   width: 100%;
   margin-bottom: 1.5vw;
   font-family: system-ui;
-  font-size: 1.5vw;
+  // font-size: 1.5vw;
   &::placeholder {
     color: lightgray;
   }
