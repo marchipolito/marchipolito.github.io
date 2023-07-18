@@ -5,11 +5,6 @@ import { useAppContextData } from "../context/AppContext";
 
 const GradientBar = styled.div`
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 10%, transparent);
-  //   background: linear-gradient(
-  //     180deg,
-  //     rgba(2, 0, 36, 1) 0%,
-  //     rgba(0, 255, 246, 1) 100%
-  //   );
   z-index: 1;
   height: 70px;
   width: 100vw;
@@ -22,12 +17,12 @@ const GradientBar = styled.div`
 `;
 const LeftNavContainer = styled.div``;
 const RightNavContainer = styled.div`
-  height: 200%;
+  // height: 200%;
   display: flex;
   align-items: center;
   margin-right: 4vw;
   position: relative;
-  // padding-bottom: 10px;
+
   &:hover {
     cursor: pointer;
   }
@@ -67,7 +62,7 @@ const Caret = styled.span`
 const DropDown = styled.div`
   position: absolute;
   right: 0;
-  bottom: 0%;
+  bottom: -40px;
   padding: 10px 20px;
   white-space: nowrap;
   background: #141414;

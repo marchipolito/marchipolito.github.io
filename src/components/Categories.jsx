@@ -46,10 +46,6 @@ const CardContainer = styled.div`
   column-gap: 0.5vw;
   margin-left: 4vw;
   align-items: center;
-  // overflow-x: auto;
-  // overflow-y: hidden;
-  // padding: 155px 0;
-  // top: -155px;
   width: 94vw;
 `;
 
