@@ -145,14 +145,14 @@ export const ItemCard = styled.div`
   height: 128px;
   width: 230px;
   min-width: 230px;
-  background: #141414;
-  border-radius: 5px;
+  background: transparent;
+  border-radius: 6px;
   //   margin-right: 6px;
   position: relative;
-  transition-duration: 1s;
-  transition-delay: 0.5s;
+  transition: all 0.5s ease;
   background-image: url(${(props) => (props.image ? props.image : oceanPic)});
   background-size: cover;
+  background-repeat: no-repeat;
   cursor: pointer;
 
   &:hover .PreviewBox {
@@ -175,6 +175,24 @@ export const ItemCard = styled.div`
   //     left: 0;
   //     transform: translateY(-50%) translateX(-33%);
   //   }
+`;
+export const ItemImg = styled.div`
+  height: 128px;
+  min-width: 230px;
+  width: inherit;
+  border: 3px solid transparent;
+  transition: all 0.5s ease;
+  background-image: url(${(props) => (props.image ? props.image : null)});
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 6px;
+`;
+export const ItemBorder = styled.div`
+  border: 3px solid transparent;
+  border-radius: 9px;
+  &:hover {
+    border: 3px solid #fff;
+  }
 `;
 
 export const PreviewBox = styled.div`

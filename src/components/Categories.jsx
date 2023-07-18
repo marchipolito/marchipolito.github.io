@@ -6,7 +6,7 @@ import data from "../data/history";
 import { useAppContextData } from "../context/AppContext";
 import ExploreLink from "./ExploreLink";
 import Tooltip from "./Tooltip";
-import { ItemCard } from "./StyledComponents";
+import { ItemCard, ItemImg, ItemBorder } from "./StyledComponents";
 
 const CategoryContainer = styled.div`
   position: absolute;
@@ -235,78 +235,23 @@ const Categories = () => {
 
                     return (
                       <>
-                        <ItemCard
-                          className="ItemCard"
-                          image={image}
-                          onMouseEnter={(e) => {
-                            setTimeout(() => {
-                              showPreview(e, history[1], category);
-                            }, 300);
-                          }}
-                          onClick={() => {
-                            setInfoData(history[1]);
-                            setShowMoreInfo(true);
-                          }}
-                          // onMouseEnter={(e) => {
-                          //   showPreview(e, history[1], category);
-                          // }}
-                        >
-                          {/* <PreviewBox className="PreviewBox first">
-                            <CardImg preview={preview}></CardImg>
-                            <CardInfo className="CardInfo">
-                              <InfoContainer className="InfoContainer">
-                                <ButtonsContainer className="ButtonsContainer">
-                                  <LeftButtons>
-                                    {company?.toUpperCase()}
-                                  </LeftButtons>
-                                  <ControlButton
-                                    onClick={() => {
-                                      setInfoData(history[1]);
-                                      showMoreInfo();
-                                    }}
-                                    className="ControlButton"
-                                  >
-                                    <FontAwesomeIcon
-                                      icon={["fas", "angle-down"]}
-                                      size="1x"
-                                    />
-                                    <Tooltip />
-                                  </ControlButton>
-                                </ButtonsContainer>
-                                <Row>
-                                  {isCurrent && <Current>CURRENT</Current>}
-                                  <PreviewText>{role}</PreviewText>
-                                </Row>
-                                <Row>
-                                  {Object.keys(category)[0] === "education" ? (
-                                    <PreviewText>{releaseDate}</PreviewText>
-                                  ) : (
-                                    <>
-                                      <PreviewText>
-                                        {years && `${years} Years `}
-                                        {months > 0 && `${months} Months`}
-                                      </PreviewText>
-                                      {Object.keys(category)[0] ===
-                                        "experience" && <Quality>4K</Quality>}
-                                    </>
-                                  )}
-                                </Row>
-                                {skills && (
-                                  <Row>
-                                    {skills?.map((skill) => (
-                                      <>
-                                        <SkillTag>{skill}</SkillTag>
-                                        <Bullet className="bullet">
-                                          &#x2022;
-                                        </Bullet>
-                                      </>
-                                    ))}
-                                  </Row>
-                                )}
-                              </InfoContainer>
-                            </CardInfo>
-                          </PreviewBox> */}
-                        </ItemCard>
+                        <ItemBorder>
+                          <ItemCard
+                            className="ItemCard"
+                            image={image}
+                            // onMouseEnter={(e) => {
+                            //   setTimeout(() => {
+                            //     showPreview(e, history[1], category);
+                            //   }, 300);
+                            // }}
+                            onClick={() => {
+                              setInfoData(history[1]);
+                              setShowMoreInfo(true);
+                            }}
+                          >
+                            {/* <ItemImg image={image} /> */}
+                          </ItemCard>
+                        </ItemBorder>
                       </>
                     );
                   }
