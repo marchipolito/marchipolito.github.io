@@ -61,8 +61,7 @@ const HeroActionsContainer = styled.div`
 
 const HeroTitle = styled.h1`
   color: white;
-  // font-size: 5vw;
-  font-size: clamp(4.5vw, 5vw, 5vw);
+  font-size: clamp(48px, 50px, 5vw);
   width: min-content;
 `;
 
@@ -96,14 +95,13 @@ const PlayButtonText = styled.span``;
 
 const MoreInfoButton = styled.button`
   background-color: #6d6d6eb3;
-  width: clamp(11vw, 12vw, 12vw);
+  width: 60%;
   white-space: nowrap;
-  height: clamp(3vw, 3.5vw, 3.5vw);
+  height: clamp(48px, 3.5vw, 3.5vw);
   border-radius: 4px;
   border: 0;
   cursor: pointer;
-  // font-size: 20px;
-  font-size: 1.4vw;
+  font-size: 1em;
   font-weight: 600;
   &:hover {
     background-color: rgba(109, 109, 110, 0.4);
