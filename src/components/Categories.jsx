@@ -175,12 +175,12 @@ const Categories = () => {
         <CategoryWrapper className="CategoryWrapper">
           <CategoryTitle>
             {Object.values(category)[0]}
-            <ExploreLink
+            {/* <ExploreLink
               className="ExploreLink"
               onMouseEnter={exploreAll}
               onMouseLeave={exploreAll}
               data={Object.entries(category)[0]}
-            ></ExploreLink>
+            ></ExploreLink> */}
           </CategoryTitle>
           <SliderContainer className="SliderContainer">
             <ArrowBtnWrap className="ArrowBtnWrap">
