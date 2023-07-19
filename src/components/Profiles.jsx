@@ -80,8 +80,7 @@ const Profiles = () => {
       {showMoreInfo && <MoreInfo className="MoreInfo" data={infoData} />}
       {showExplore && <ExploreAll />}
       {contactMe && <ContactMe />}
-      {/* {showPreview && <PreviewBox />} */}
-      <Preview />
+      {/* <Preview /> */}
     </MainWrapper>
   );
 };
