@@ -23,7 +23,7 @@ const Loader = (props) => {
   return (
     <LoaderContainer>
       <Spinner className="loader"></Spinner>
-      <Avatar hidename />
+      <Avatar hidename type={"user"} />
     </LoaderContainer>
   );
 };
