@@ -27,6 +27,7 @@ import {
   faAngleLeft,
   faAngleRight,
   faCaretDown,
+  faFilePdf,
 } from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
 
@@ -47,7 +48,8 @@ library.add(
   faTimes,
   faAngleLeft,
   faAngleRight,
-  faCaretDown
+  faCaretDown,
+  faFilePdf
 );
 
 const GlobalFonts = createGlobalStyle`

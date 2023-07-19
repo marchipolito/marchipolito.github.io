@@ -26,6 +26,10 @@ const ContentWrapper = styled.div``;
 
 const UserWrapper = styled.div`
   display: flex;
+  justify-content: center;
+  flex-flow: row;
+  flex-wrap: wrap;
+  column-gap: 1vw;
 `;
 const WhoThis = styled.h1`
   color: #fff;
@@ -60,17 +64,9 @@ const Profiles = () => {
         {showUser && <WhoThis>Who's watching?</WhoThis>}
         {showUser && (
           <UserWrapper className="test ">
-            <Avatar
-              setShowLoader={setShowLoader}
-              setShowUser={setShowUser}
-              name="Marc"
-            />
-            <Avatar
-              setShowLoader={setShowLoader}
-              setShowUser={setShowUser}
-              contactMe
-              name="Contact Me"
-            />
+            <Avatar name="Marc" type={"user"} />
+            <Avatar name="Resume" type={"resume"} />
+            <Avatar contactMe name="Contact Me" type={"contact"} />
           </UserWrapper>
         )}
         {showLoader && (

@@ -6,11 +6,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const IconWrapper = styled.div`
   width: fit-content;
-  margin: auto;
 `;
 const ProfileImg = styled.div`
-  height: ${(props) => (props.mini ? "48px" : "10vw")};
-  width: ${(props) => (props.mini ? "48px" : "10vw")};
+  height: ${(props) => (props.mini ? "48px" : "clamp(140px,10vw,10vw)")};
+  width: ${(props) => (props.mini ? "48px" : "clamp(140px,10vw,10vw)")};
   background: #141414;
   border-radius: 4px;
   margin: auto;
@@ -27,10 +26,10 @@ const ProfileImg = styled.div`
 `;
 
 const ContactImg = styled.div`
-  height: ${(props) => (props.mini ? "48px" : "10vw")};
-  width: ${(props) => (props.mini ? "48px" : "10vw")};
-  min-height: 140px;
-  min-width: 140px;
+  height: ${(props) => (props.mini ? "48px" : "clamp(140px,10vw,10vw)")};
+  width: ${(props) => (props.mini ? "48px" : "clamp(140px,10vw,10vw)")};
+  // min-height: 140px;
+  // min-width: 140px;
   background: #141414;
   border-radius: 4px;
   margin: auto;
@@ -57,7 +56,7 @@ const ProfileName = styled.div`
 `;
 
 const Avatar = (props) => {
-  const { name, contactMe, mini } = props;
+  const { name, contactMe, mini, type } = props;
   const { setShowMoreInfo, setShowLoader, setShowUser, setContactMe } =
     useAppContextData();
   const showApp = () => {
@@ -68,12 +67,47 @@ const Avatar = (props) => {
       setShowUser(false);
     }
   };
+
+  const AvatarType = (type) => {
+    switch (type) {
+      case "user": {
+        return <ProfileImg className="avatarImg" {...props}></ProfileImg>;
+      }
+      case "resume": {
+        return (
+          <>
+            <ContactImg className="avatarImg">
+              <FontAwesomeIcon
+                icon={["fas", "file-pdf"]}
+                style={{ color: "grey", fontSize: "6vw" }}
+              />
+            </ContactImg>
+          </>
+        );
+      }
+      case "contact": {
+        return (
+          <>
+            <ContactImg className="avatarImg">
+              <FontAwesomeIcon
+                icon={["fas", "plus-circle"]}
+                style={{ color: "grey", fontSize: "6vw" }}
+              />
+            </ContactImg>
+          </>
+        );
+      }
+      default:
+        return <></>;
+    }
+  };
   return (
     <IconWrapper
       className={mini ? "mini" : "iconWrapper"}
       onClick={mini ? () => {} : showApp}
     >
-      {contactMe ? (
+      {AvatarType(type)}
+      {/* {contactMe ? (
         <>
           <ContactImg className="avatarImg">
             <FontAwesomeIcon
@@ -84,7 +118,7 @@ const Avatar = (props) => {
         </>
       ) : (
         <ProfileImg className="avatarImg" {...props}></ProfileImg>
-      )}
+      )} */}
       <ProfileName className="profileName" {...props}>
         {name}
       </ProfileName>
