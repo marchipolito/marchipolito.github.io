@@ -60,12 +60,27 @@ const Avatar = (props) => {
   const { setShowMoreInfo, setShowLoader, setShowUser, setContactMe } =
     useAppContextData();
   const showApp = () => {
-    if (contactMe) {
-      setContactMe(true);
-    } else {
-      setShowLoader(true);
-      setShowUser(false);
+    switch (type) {
+      case "user": {
+        setShowLoader(true);
+        setShowUser(false);
+        break;
+      }
+      case "contact": {
+        setContactMe(true);
+        break;
+      }
+      case "resume": {
+        window.open("https://www.linkedin.com/in/marchipolito/", "_blank");
+        break;
+      }
     }
+    // if (contactMe) {
+    //   setContactMe(true);
+    // } else {
+    //   setShowLoader(true);
+    //   setShowUser(false);
+    // }
   };
 
   const AvatarType = (type) => {
@@ -78,8 +93,8 @@ const Avatar = (props) => {
           <>
             <ContactImg className="avatarImg">
               <FontAwesomeIcon
-                icon={["fas", "file-pdf"]}
-                style={{ color: "grey", fontSize: "6vw" }}
+                icon={["fab", "linkedin"]}
+                style={{ color: "grey", fontSize: "clamp(60px,6vw,6vw)" }}
               />
             </ContactImg>
           </>
@@ -91,7 +106,7 @@ const Avatar = (props) => {
             <ContactImg className="avatarImg">
               <FontAwesomeIcon
                 icon={["fas", "plus-circle"]}
-                style={{ color: "grey", fontSize: "6vw" }}
+                style={{ color: "grey", fontSize: "clamp(60px,6vw,6vw)" }}
               />
             </ContactImg>
           </>

@@ -64,9 +64,9 @@ const Profiles = () => {
         {showUser && <WhoThis>Who's watching?</WhoThis>}
         {showUser && (
           <UserWrapper className="test ">
-            <Avatar name="Marc" type={"user"} />
-            <Avatar name="Resume" type={"resume"} />
-            <Avatar contactMe name="Contact Me" type={"contact"} />
+            <Avatar name="Marc" type="user" />
+            <Avatar name="LinkedIn" type="resume" />
+            <Avatar contactMe name="Contact Me" type="contact" />
           </UserWrapper>
         )}
         {showLoader && (
