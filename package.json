@@ -43,5 +43,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://marchipolito.github.io"
+  "homepage": "https://marchipolito.github.io",
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  }
 }

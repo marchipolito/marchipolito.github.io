@@ -129,7 +129,7 @@ const HeroBanner = () => {
   return (
     <MainContainer className="MainContainer">
       <HeroDetailsContainer className="HeroDetailsContainer">
-        <HeroImg className="HeroImg" src={oceanPic}>
+        <HeroImg id="heroimg" className="HeroImg" src={oceanPic}>
           <HeroActionsContainer className="HeroActionsContainer">
             <HeroTitle>Frontend Developer</HeroTitle>
             <ButtonsContainer>

@@ -41,8 +41,18 @@ const MenuItem = styled.li`
   list-style: none;
   font-size: 14px;
   margin-left: 20px;
+  &:after {
+    display: block;
+    content: "";
+    border-bottom: solid 2px #fff;
+    transform: scaleX(0);
+    transition: transform 200ms ease-in-out;
+  }
   &:hover {
     cursor: pointer;
+  }
+  &:hover:after {
+    transform: scaleX(1);
   }
   &:first-of-type {
     margin-left: 4vw;
@@ -79,14 +89,19 @@ const DropDown = styled.div`
 
 const GradientMenu = () => {
   const { setContactMe } = useAppContextData();
+  const scroll = (id, block = "center") => {
+    document
+      .getElementById(id)
+      .scrollIntoView({ behavior: "smooth", block: block });
+  };
   return (
     <GradientBar className="GradientBar">
       <LeftNavContainer>
         <MenuContainer>
-          <MenuItem>Home</MenuItem>
-          <MenuItem>Experience</MenuItem>
-          <MenuItem>Skills</MenuItem>
-          <MenuItem>Education</MenuItem>
+          <MenuItem onClick={() => scroll("heroimg", "start")}>Home</MenuItem>
+          <MenuItem onClick={() => scroll("experience")}>Experience</MenuItem>
+          <MenuItem onClick={() => scroll("education")}>Education</MenuItem>
+          <MenuItem onClick={() => scroll("projects")}>Projects</MenuItem>
         </MenuContainer>
       </LeftNavContainer>
       <RightNavContainer className="rightNav">

@@ -173,7 +173,7 @@ const Categories = () => {
     <CategoryContainer className="CategoryContainer">
       {categories.map((category, index) => (
         <CategoryWrapper className="CategoryWrapper">
-          <CategoryTitle>
+          <CategoryTitle id={Object.keys(category)[0]}>
             {Object.values(category)[0]}
             {/* <ExploreLink
               className="ExploreLink"
