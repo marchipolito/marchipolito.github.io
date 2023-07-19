@@ -90,7 +90,7 @@ const GradientMenu = () => {
         </MenuContainer>
       </LeftNavContainer>
       <RightNavContainer className="rightNav">
-        <Avatar hidename mini />
+        <Avatar hidename mini type={"user"} />
         <Caret className="caret" />
         <DropDown
           className="DropDown"
