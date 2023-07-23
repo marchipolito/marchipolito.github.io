@@ -148,7 +148,7 @@ const ContactMe = () => {
       <Blackout />
       <ContentWrapper onClick={hideForm} className="ContentWrapper">
         <Modal onClick={(e) => e.stopPropagation()}>
-          <div className="test" style={{ width: "100%" }}>
+          <div className="test" style={{ width: "100%", overflow: "hidden" }}>
             <CloseBtn onClick={hideForm} />
             <HeaderRow>
               <Header>Say Hello</Header>
@@ -159,7 +159,6 @@ const ContactMe = () => {
               </Container>
               <Container style={{ marginRight: "4vw" }}>
                 <Form
-                  // action="https://script.google.com/macros/s/AKfycbzFzzOxorEcSWuIikoauRspfjDe7_7-KZDG38_A9uwOmJYPKvap_S13BoBkXeq0uxIQmw/exec"
                   action="https://script.google.com/macros/s/AKfycbzFzzOxorEcSWuIikoauRspfjDe7_7-KZDG38_A9uwOmJYPKvap_S13BoBkXeq0uxIQmw/exec"
                   method="POST"
                   onSubmit={handleSubmit}

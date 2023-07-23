@@ -153,6 +153,7 @@ export const ItemCard = styled.div`
   background-image: url(${(props) => (props.image ? props.image : oceanPic)});
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   cursor: pointer;
 
   &:hover .PreviewBox {
