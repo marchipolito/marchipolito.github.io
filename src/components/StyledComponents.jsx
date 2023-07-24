@@ -79,6 +79,7 @@ export const StyledButton = styled.button`
   font-size: clamp(10px, 1.5vw, 1.5vw);
   padding: 0;
   cursor: pointer;
+  -webkit-appearance: none;
 `;
 
 /**************************************************/
