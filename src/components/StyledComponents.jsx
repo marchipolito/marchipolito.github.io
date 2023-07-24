@@ -74,9 +74,9 @@ export const StyledCloseBtn = styled.div`
 `;
 
 export const StyledButton = styled.button`
-  height: 2.5vw;
-  width: 6vw;
-  font-size: 1.5vw;
+  height: clamp(30px, 2.5vw, 2.5vw);
+  width: clamp(40px, 6vw, 6vw);
+  font-size: clamp(10px, 1.5vw, 1.5vw);
   padding: 0;
   cursor: pointer;
 `;

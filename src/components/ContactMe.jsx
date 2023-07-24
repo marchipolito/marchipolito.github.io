@@ -16,7 +16,8 @@ const HeaderRow = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 17vw;
+  // height: 17vw;
+  height: clamp(150px, 20vw, 20vw);
 `;
 const Header = styled.h1`
   color: #ffffff;
@@ -26,8 +27,8 @@ const Header = styled.h1`
 
 const InputSection = styled.div`
   // width: 100%;
-  // margin-right: 4vw;
-  // margin-left: 1vw;
+  margin-right: 4vw;
+  margin-left: 4vw;
   // display: flex;
   // justify-content: space-between;
 `;
@@ -42,6 +43,7 @@ const InputContainer = styled.div`
 const TextInput = styled.input`
   background: #666;
   border: 1px solid transparent;
+  text-indent: 1vw;
   // border-radius: 6px;
   color: #fff;
   height: 3vw;
@@ -61,6 +63,7 @@ const TextInput = styled.input`
 const TextArea = styled.textarea`
   background: #666;
   border: 1px solid transparent;
+  text-indent: 1vw;
   // border-radius: 6px;
   color: #fff;
   resize: none;
@@ -153,11 +156,47 @@ const ContactMe = () => {
             <HeaderRow>
               <Header>Say Hello</Header>
             </HeaderRow>
-            <Container flex className="Container">
-              <Container style={{ marginLeft: "4vw", marginRight: "1vw" }}>
+            {/* <Container style={{ marginRight: "4vw", marginLeft: "4vw" }}> */}
+            <Container>
+              <Form
+                action="https://script.google.com/macros/s/AKfycbzFzzOxorEcSWuIikoauRspfjDe7_7-KZDG38_A9uwOmJYPKvap_S13BoBkXeq0uxIQmw/exec"
+                method="POST"
+                onSubmit={handleSubmit}
+              >
+                <InputSection className="InputSection">
+                  <TextInput
+                    id="Name"
+                    name="Name"
+                    type="text"
+                    placeholder="Name"
+                    required
+                  ></TextInput>
+                  <TextInput
+                    id="Email"
+                    name="Email"
+                    type="email"
+                    placeholder="Email"
+                    required
+                  ></TextInput>
+                </InputSection>
+                <InputSection>
+                  <TextArea
+                    id="Message"
+                    name="Message"
+                    placeholder="Send a message!"
+                    required
+                  ></TextArea>
+                </InputSection>
+                <InputSection>
+                  <SubmitBtn />
+                </InputSection>
+              </Form>
+            </Container>
+            {/* <Container flex className="Container"> */}
+            {/* <Container style={{ marginLeft: "4vw", marginRight: "1vw" }}>
                 <Image src={profPic} />
-              </Container>
-              <Container style={{ marginRight: "4vw" }}>
+              </Container> */}
+            {/* <Container style={{ marginRight: "4vw", marginLeft: "4vw" }}>
                 <Form
                   action="https://script.google.com/macros/s/AKfycbzFzzOxorEcSWuIikoauRspfjDe7_7-KZDG38_A9uwOmJYPKvap_S13BoBkXeq0uxIQmw/exec"
                   method="POST"
@@ -191,8 +230,8 @@ const ContactMe = () => {
                     <SubmitBtn />
                   </InputSection>
                 </Form>
-              </Container>
-            </Container>
+              </Container> */}
+            {/* </Container> */}
           </div>
         </Modal>
       </ContentWrapper>
