@@ -22,7 +22,9 @@ const MainWrapper = styled.div`
   overflow: hidden;
 `;
 
-const ContentWrapper = styled.div``;
+const ContentWrapper = styled.div`
+  overflow: hidden;
+`;
 
 const UserWrapper = styled.div`
   display: flex;
