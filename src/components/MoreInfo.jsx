@@ -65,6 +65,7 @@ const Row = styled.div`
 `;
 const LeftContainer = styled.div`
   width: 55%;
+  // width: 100%;
 `;
 
 const Match = styled.div`
@@ -83,10 +84,22 @@ const Bullet = styled.span`
   color: #ffffff;
   //   padding: 0 0.75em 0 0;
   cursor: pointer;
-  font-size: 0.85em;
+  font-size: 0.9em;
+  // font-size: clamp(16px, 1.25em, 1.25em);
 `;
 const RightContainer = styled.div`
   width: 40%;
+`;
+
+const Duties = styled.h1`
+  margin: 0 0 16px;
+`;
+
+const DutyRow = styled.div`
+  height: 10vw;
+  width: 100%;
+  display: flex;
+  align-items: center;
 `;
 
 const GreyText = styled.span`
@@ -167,9 +180,8 @@ const MoreInfo = ({ data }) => {
                     )}
                   </Row>
                   <Row>{synopsis?.summary}</Row>
-                  {/* separate full width section? */}
-                  {synopsis?.duties &&
-                    synopsis?.duties.map((duty) => <Row>{duty}</Row>)}
+                  {/* {synopsis?.duties &&
+                    synopsis?.duties.map((duty) => <Row>{duty}</Row>)} */}
                 </LeftContainer>
                 <RightContainer>
                   {skills && (
@@ -194,6 +206,16 @@ const MoreInfo = ({ data }) => {
                   )}
                 </RightContainer>
               </SynopsisWrapper>
+              <Row>
+                {synopsis?.duties.length > 1 && (
+                  <>
+                    <Duties className="Duties">Duties</Duties>
+                    {synopsis?.duties.map((duty) => (
+                      <DutyRow>{duty}</DutyRow>
+                    ))}
+                  </>
+                )}
+              </Row>
             </DetailsInfo>
           </DetailsWrapper>
         </Modal>
