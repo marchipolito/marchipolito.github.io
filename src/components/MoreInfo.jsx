@@ -96,7 +96,7 @@ const Duties = styled.h1`
 `;
 
 const DutyRow = styled.div`
-  height: 10vw;
+  height: clamp(90px, 10vw, 10vw);
   width: 100%;
   display: flex;
   align-items: center;
