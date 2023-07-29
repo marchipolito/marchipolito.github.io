@@ -15,6 +15,7 @@ export const Blackout = styled.div`
   transition: all 0.2s ease;
   display: flex;
   justify-content: center;
+  overflow: hidden;
 `;
 export const ContentWrapper = styled.div`
   height: 100vh;
