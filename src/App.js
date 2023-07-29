@@ -61,7 +61,7 @@ const GlobalFonts = createGlobalStyle`
 function App() {
   return (
     <AppProvider>
-      <div>
+      <div style={{ overflow: "hidden" }}>
         {/* <Profile />
        <Social /> */}
         {/* <Header /> */}
