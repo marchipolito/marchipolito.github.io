@@ -96,10 +96,12 @@ const Duties = styled.h1`
 `;
 
 const DutyRow = styled.div`
-  height: clamp(90px, 10vw, 10vw);
+  height: clamp(90px, 120px, 10vw);
   width: 100%;
   display: flex;
   align-items: center;
+  border-radius: 6px;
+  border-bottom: 1px solid dimgrey;
 `;
 
 const GreyText = styled.span`
