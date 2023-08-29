@@ -9,6 +9,11 @@ import alwaysBe from "../images/always_be_my_maybe.jpeg";
 import keanuGif from "../images/keanu.gif";
 import fnf from "../images/fastnfurious.png";
 import fnfGif from "../images/fast-and-furious-tokyo-drift.gif";
+import mha from "../images/mha.webp";
+import mhagif from "../images/mhagif.gif";
+import wreckit from "../images/wreckit.avif";
+import mashle from "../images/Mashle_Main.webp";
+import mitchellsGif from "../images/mitchells.gif";
 
 const data = {
   history: {
@@ -186,8 +191,7 @@ const data = {
         role: "Bachelor's degree in Network Securtiy",
         degree: "Bachelor's",
         type: "Network Security",
-        image:
-          "https://cdn.theatlantic.com/thumbor/xrUaePSXLcmWCe_Q7Axy8rZo-Q4=/227x0:1550x744/960x540/media/img/mt/2018/11/ralph1/original.jpg",
+        image: wreckit,
         preview:
           "https://media.tenor.com/48_84rqqg_cAAAAC/ralph-breaks-the-internet.gif",
         releaseDate: "2012",
@@ -210,7 +214,7 @@ const data = {
         type: "Computer Systems Networking and Telecommunications",
         image:
           "https://static01.nyt.com/images/2021/04/28/arts/mitchells1/mitchells1-videoSixteenByNineJumbo1600.jpg",
-        preview: "https://media.tenor.com/GgKCEL1EFBEAAAAd/dog-pig.gif",
+        preview: mitchellsGif,
         releaseDate: "2011",
       },
       NTHS: {
@@ -219,8 +223,7 @@ const data = {
         role: "National Technical Honor Society",
         degree: "Associate's",
         type: "Computer Systems Networking and Telecommunications",
-        image:
-          "https://static.wikia.nocookie.net/mashle/images/0/08/Mashle_Main.png",
+        image: mashle,
         preview:
           "https://64.media.tumblr.com/84b29ff6297a45d23d59528258f20a40/23654ab315719c47-42/s540x810/dafb22430ee1d9a09dfee9bf7ea0113cd03487a6.gifv",
       },
@@ -230,9 +233,8 @@ const data = {
         role: "CompTIA Linux+",
         degree: "Associate's",
         type: "Computer Systems Networking and Telecommunications",
-        image:
-          "https://static01.nyt.com/images/2021/04/28/arts/mitchells1/mitchells1-videoSixteenByNineJumbo1600.jpg",
-        preview: "https://media.tenor.com/GgKCEL1EFBEAAAAd/dog-pig.gif",
+        image: mha,
+        preview: mhagif,
         releaseDate: "2010",
       },
       Network: {
@@ -243,7 +245,7 @@ const data = {
         type: "Computer Systems Networking and Telecommunications",
         image:
           "https://static01.nyt.com/images/2021/04/28/arts/mitchells1/mitchells1-videoSixteenByNineJumbo1600.jpg",
-        preview: "https://media.tenor.com/GgKCEL1EFBEAAAAd/dog-pig.gif",
+        preview: mitchellsGif,
         releaseDate: "2010",
       },
       Security: {
@@ -254,7 +256,7 @@ const data = {
         type: "Computer Systems Networking and Telecommunications",
         image:
           "https://static01.nyt.com/images/2021/04/28/arts/mitchells1/mitchells1-videoSixteenByNineJumbo1600.jpg",
-        preview: "https://media.tenor.com/GgKCEL1EFBEAAAAd/dog-pig.gif",
+        preview: mitchellsGif,
         releaseDate: "2010",
       },
       Aplus: {
@@ -265,7 +267,7 @@ const data = {
         type: "Computer Systems Networking and Telecommunications",
         image:
           "https://static01.nyt.com/images/2021/04/28/arts/mitchells1/mitchells1-videoSixteenByNineJumbo1600.jpg",
-        preview: "https://media.tenor.com/GgKCEL1EFBEAAAAd/dog-pig.gif",
+        preview: mitchellsGif,
         releaseDate: "2010",
       },
       Win7: {
@@ -276,7 +278,7 @@ const data = {
         type: "Computer Systems Networking and Telecommunications",
         image:
           "https://static01.nyt.com/images/2021/04/28/arts/mitchells1/mitchells1-videoSixteenByNineJumbo1600.jpg",
-        preview: "https://media.tenor.com/GgKCEL1EFBEAAAAd/dog-pig.gif",
+        preview: mitchellsGif,
       },
     },
     projects: {
