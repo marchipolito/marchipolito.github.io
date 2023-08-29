@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.aa941976.chunk.css",
-    "main.js": "/static/js/main.8ee64001.chunk.js",
-    "main.js.map": "/static/js/main.8ee64001.chunk.js.map",
+    "main.js": "/static/js/main.d86cb4a5.chunk.js",
+    "main.js.map": "/static/js/main.d86cb4a5.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.495e0604.js",
     "runtime-main.js.map": "/static/js/runtime-main.495e0604.js.map",
     "static/js/2.000d3383.chunk.js": "/static/js/2.000d3383.chunk.js",
@@ -13,6 +13,7 @@
     "static/css/main.aa941976.chunk.css.map": "/static/css/main.aa941976.chunk.css.map",
     "static/js/2.000d3383.chunk.js.LICENSE.txt": "/static/js/2.000d3383.chunk.js.LICENSE.txt",
     "static/media/Hackers-Hackerman.7604c42e.webp": "/static/media/Hackers-Hackerman.7604c42e.webp",
+    "static/media/Mashle_Main.c77d57df.webp": "/static/media/Mashle_Main.c77d57df.webp",
     "static/media/always_be_my_maybe.a5a8d3cf.jpeg": "/static/media/always_be_my_maybe.a5a8d3cf.jpeg",
     "static/media/bruce-almighty-jim-carrey.cc65403b.gif": "/static/media/bruce-almighty-jim-carrey.cc65403b.gif",
     "static/media/bruce_almighty.959376b9.webp": "/static/media/bruce_almighty.959376b9.webp",
@@ -20,16 +21,20 @@
     "static/media/fastnfurious.01f1ab66.png": "/static/media/fastnfurious.01f1ab66.png",
     "static/media/hackerman-kung-fury.0dd7e0b3.gif": "/static/media/hackerman-kung-fury.0dd7e0b3.gif",
     "static/media/keanu.1e437a8d.gif": "/static/media/keanu.1e437a8d.gif",
+    "static/media/mha.14582cfd.webp": "/static/media/mha.14582cfd.webp",
+    "static/media/mhagif.ba52d601.gif": "/static/media/mhagif.ba52d601.gif",
+    "static/media/mitchells.d6dd7d29.gif": "/static/media/mitchells.d6dd7d29.gif",
     "static/media/ocean.cd615c80.jpg": "/static/media/ocean.cd615c80.jpg",
     "static/media/portfolio.68cdb1f4.png": "/static/media/portfolio.68cdb1f4.png",
     "static/media/profile.e7f5ca66.jpg": "/static/media/profile.e7f5ca66.jpg",
     "static/media/rick-and-morty-rtj.b62da645.gif": "/static/media/rick-and-morty-rtj.b62da645.gif",
-    "static/media/rick_morty.f063825d.jpeg": "/static/media/rick_morty.f063825d.jpeg"
+    "static/media/rick_morty.f063825d.jpeg": "/static/media/rick_morty.f063825d.jpeg",
+    "static/media/wreckit.5481e833.avif": "/static/media/wreckit.5481e833.avif"
   },
   "entrypoints": [
     "static/js/runtime-main.495e0604.js",
     "static/js/2.000d3383.chunk.js",
     "static/css/main.aa941976.chunk.css",
-    "static/js/main.8ee64001.chunk.js"
+    "static/js/main.d86cb4a5.chunk.js"
   ]
 }
