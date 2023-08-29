@@ -14,6 +14,8 @@ import mhagif from "../images/mhagif.gif";
 import wreckit from "../images/wreckit.avif";
 import mashle from "../images/Mashle_Main.webp";
 import mitchellsGif from "../images/mitchells.gif";
+import ipman from "../images/ip_man_img.jpeg";
+import ipmanGif from "../images/ip_man.gif";
 
 const data = {
   history: {
@@ -202,8 +204,8 @@ const data = {
         role: "Bachelor's degree in Computer Networking",
         degree: "Bachelor's",
         type: "Computer Networking",
-        image: "https://s.hdnux.com/photos/11/11/05/2396514/8/1200x0.jpg",
-        preview: "https://media.tenor.com/Y9hwBoFFr1QAAAAC/ip-man-donnie.gif",
+        image: ipman,
+        preview: ipmanGif,
         releaseDate: "2012",
       },
       colemanUni1: {
