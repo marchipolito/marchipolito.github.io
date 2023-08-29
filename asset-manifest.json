@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.aa941976.chunk.css",
-    "main.js": "/static/js/main.d86cb4a5.chunk.js",
-    "main.js.map": "/static/js/main.d86cb4a5.chunk.js.map",
+    "main.js": "/static/js/main.5c94bef5.chunk.js",
+    "main.js.map": "/static/js/main.5c94bef5.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.495e0604.js",
     "runtime-main.js.map": "/static/js/runtime-main.495e0604.js.map",
     "static/js/2.000d3383.chunk.js": "/static/js/2.000d3383.chunk.js",
@@ -20,6 +20,8 @@
     "static/media/fast-and-furious-tokyo-drift.ba335d84.gif": "/static/media/fast-and-furious-tokyo-drift.ba335d84.gif",
     "static/media/fastnfurious.01f1ab66.png": "/static/media/fastnfurious.01f1ab66.png",
     "static/media/hackerman-kung-fury.0dd7e0b3.gif": "/static/media/hackerman-kung-fury.0dd7e0b3.gif",
+    "static/media/ip_man.0677fe49.gif": "/static/media/ip_man.0677fe49.gif",
+    "static/media/ip_man_img.54c5d31d.jpeg": "/static/media/ip_man_img.54c5d31d.jpeg",
     "static/media/keanu.1e437a8d.gif": "/static/media/keanu.1e437a8d.gif",
     "static/media/mha.14582cfd.webp": "/static/media/mha.14582cfd.webp",
     "static/media/mhagif.ba52d601.gif": "/static/media/mhagif.ba52d601.gif",
@@ -35,6 +37,6 @@
     "static/js/runtime-main.495e0604.js",
     "static/js/2.000d3383.chunk.js",
     "static/css/main.aa941976.chunk.css",
-    "static/js/main.d86cb4a5.chunk.js"
+    "static/js/main.5c94bef5.chunk.js"
   ]
 }
