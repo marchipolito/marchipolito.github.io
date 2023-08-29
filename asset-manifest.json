@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.aa941976.chunk.css",
-    "main.js": "/static/js/main.5c94bef5.chunk.js",
-    "main.js.map": "/static/js/main.5c94bef5.chunk.js.map",
+    "main.js": "/static/js/main.757f7460.chunk.js",
+    "main.js.map": "/static/js/main.757f7460.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.495e0604.js",
     "runtime-main.js.map": "/static/js/runtime-main.495e0604.js.map",
     "static/js/2.000d3383.chunk.js": "/static/js/2.000d3383.chunk.js",
@@ -31,12 +31,14 @@
     "static/media/profile.e7f5ca66.jpg": "/static/media/profile.e7f5ca66.jpg",
     "static/media/rick-and-morty-rtj.b62da645.gif": "/static/media/rick-and-morty-rtj.b62da645.gif",
     "static/media/rick_morty.f063825d.jpeg": "/static/media/rick_morty.f063825d.jpeg",
+    "static/media/rushHour.6a544b55.avif": "/static/media/rushHour.6a544b55.avif",
+    "static/media/rushHourGif.fee4c922.gif": "/static/media/rushHourGif.fee4c922.gif",
     "static/media/wreckit.5481e833.avif": "/static/media/wreckit.5481e833.avif"
   },
   "entrypoints": [
     "static/js/runtime-main.495e0604.js",
     "static/js/2.000d3383.chunk.js",
     "static/css/main.aa941976.chunk.css",
-    "static/js/main.5c94bef5.chunk.js"
+    "static/js/main.757f7460.chunk.js"
   ]
 }
