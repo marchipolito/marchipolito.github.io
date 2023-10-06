@@ -209,7 +209,7 @@ const MoreInfo = ({ data }) => {
                 </RightContainer>
               </SynopsisWrapper>
               <Row>
-                {synopsis?.duties.length > 1 && (
+                {synopsis?.duties?.length > 1 && (
                   <>
                     <Duties className="Duties">Duties</Duties>
                     {synopsis?.duties.map((duty) => (

@@ -36,6 +36,8 @@ export const AppProvider = ({ children }) => {
   const [exploreData, setExploreData] = useState([]);
   const [contactMe, setContactMe] = useState(false);
   const [category, setCategory] = useState("");
+  const [showSpinner, setShowSpinner] = useState(false);
+  const [sentMsg, setSentMsg] = useState(false);
 
   const data = useMemo(() => {
     return {
@@ -60,6 +62,10 @@ export const AppProvider = ({ children }) => {
       setContactMe,
       category,
       setCategory,
+      showSpinner,
+      setShowSpinner,
+      sentMsg,
+      setSentMsg,
     };
   }, [
     state,
@@ -83,6 +89,10 @@ export const AppProvider = ({ children }) => {
     setContactMe,
     category,
     setCategory,
+    showSpinner,
+    setShowSpinner,
+    sentMsg,
+    setSentMsg,
   ]);
   return <AppContext.Provider value={data}>{children}</AppContext.Provider>;
 };

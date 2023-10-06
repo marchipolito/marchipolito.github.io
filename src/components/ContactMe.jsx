@@ -2,6 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import profPic from "../images/profile.jpg";
 import oceanPic from "../images/ocean.jpg";
+import LoadingSpinner from "./LoadingSpinner";
+import SentMsg from "./SentMsg";
+
 import {
   Blackout,
   ButtonsContainer,
@@ -115,6 +118,10 @@ const ContactMe = () => {
     setShowMoreInfo,
     setInfoData,
     setContactMe,
+    showSpinner,
+    setShowSpinner,
+    sentMsg,
+    setSentMsg,
   } = useAppContextData();
 
   const hideForm = () => {
@@ -127,11 +134,15 @@ const ContactMe = () => {
     const formData = new FormData(form);
     const action = e.target.action;
 
+    setShowSpinner(true);
     fetch(action, {
       method: "POST",
       body: formData,
     })
       .then(() => {
+        setShowSpinner(false);
+        setSentMsg(true);
+
         resetFields();
         console.log("success");
       })
@@ -141,6 +152,9 @@ const ContactMe = () => {
   };
 
   const resetFields = () => {
+    setTimeout(() => {
+      setSentMsg(false);
+    }, 1000);
     document.getElementById("Email").value = "";
     document.getElementById("Name").value = "";
     document.getElementById("Message").value = "";
@@ -156,47 +170,8 @@ const ContactMe = () => {
             <HeaderRow>
               <Header>Say Hello</Header>
             </HeaderRow>
-            {/* <Container style={{ marginRight: "4vw", marginLeft: "4vw" }}> */}
             <Container>
-              <Form
-                action="https://script.google.com/macros/s/AKfycbzFzzOxorEcSWuIikoauRspfjDe7_7-KZDG38_A9uwOmJYPKvap_S13BoBkXeq0uxIQmw/exec"
-                method="POST"
-                onSubmit={handleSubmit}
-              >
-                <InputSection className="InputSection">
-                  <TextInput
-                    id="Name"
-                    name="Name"
-                    type="text"
-                    placeholder="Name"
-                    required
-                  ></TextInput>
-                  <TextInput
-                    id="Email"
-                    name="Email"
-                    type="email"
-                    placeholder="Email"
-                    required
-                  ></TextInput>
-                </InputSection>
-                <InputSection>
-                  <TextArea
-                    id="Message"
-                    name="Message"
-                    placeholder="Send a message!"
-                    required
-                  ></TextArea>
-                </InputSection>
-                <InputSection>
-                  <SubmitBtn />
-                </InputSection>
-              </Form>
-            </Container>
-            {/* <Container flex className="Container"> */}
-            {/* <Container style={{ marginLeft: "4vw", marginRight: "1vw" }}>
-                <Image src={profPic} />
-              </Container> */}
-            {/* <Container style={{ marginRight: "4vw", marginLeft: "4vw" }}>
+              {!showSpinner && !sentMsg && (
                 <Form
                   action="https://script.google.com/macros/s/AKfycbzFzzOxorEcSWuIikoauRspfjDe7_7-KZDG38_A9uwOmJYPKvap_S13BoBkXeq0uxIQmw/exec"
                   method="POST"
@@ -230,8 +205,10 @@ const ContactMe = () => {
                     <SubmitBtn />
                   </InputSection>
                 </Form>
-              </Container> */}
-            {/* </Container> */}
+              )}
+              {showSpinner && <LoadingSpinner />}
+              {sentMsg && <SentMsg />}
+            </Container>
           </div>
         </Modal>
       </ContentWrapper>
