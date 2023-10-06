@@ -20,6 +20,8 @@ import rushHour from "../images/rushHour.avif";
 import rushHourGif from "../images/rushHourGif.gif";
 import theBat from "../images/thebat.avif";
 import batmobileGif from "../images/batmobile.gif";
+import himym from "../images/himym.jpeg";
+import himymGif from "../images/himymGif.webp";
 
 const data = {
   history: {
@@ -248,8 +250,8 @@ const data = {
         role: "CompTIA Network+",
         degree: "",
         type: "",
-        image: mha,
-        preview: mhagif,
+        image: himym,
+        preview: himymGif,
         releaseDate: "2010",
       },
       Security: {
@@ -258,9 +260,8 @@ const data = {
         role: "CompTIA Security+",
         degree: "",
         type: "",
-        image: mashle,
-        preview:
-          "https://64.media.tumblr.com/84b29ff6297a45d23d59528258f20a40/23654ab315719c47-42/s540x810/dafb22430ee1d9a09dfee9bf7ea0113cd03487a6.gifv",
+        image: mha,
+        preview: mhagif,
         releaseDate: "2010",
       },
       Aplus: {
@@ -269,21 +270,21 @@ const data = {
         role: "CompTIA A+",
         degree: "Associate's",
         type: "Computer Systems Networking and Telecommunications",
-        image:
-          "https://static01.nyt.com/images/2021/04/28/arts/mitchells1/mitchells1-videoSixteenByNineJumbo1600.jpg",
-        preview: mitchellsGif,
+        image: mashle,
+        preview:
+          "https://64.media.tumblr.com/84b29ff6297a45d23d59528258f20a40/23654ab315719c47-42/s540x810/dafb22430ee1d9a09dfee9bf7ea0113cd03487a6.gifv",
         releaseDate: "2010",
       },
-      Win7: {
-        company: "Microsoft",
-        school: "",
-        role: "Windows 7",
-        degree: "Associate's",
-        type: "Computer Systems Networking and Telecommunications",
-        image:
-          "https://static01.nyt.com/images/2021/04/28/arts/mitchells1/mitchells1-videoSixteenByNineJumbo1600.jpg",
-        preview: mitchellsGif,
-      },
+      // Win7: {
+      //   company: "Microsoft",
+      //   school: "",
+      //   role: "Windows 7",
+      //   degree: "Associate's",
+      //   type: "Computer Systems Networking and Telecommunications",
+      //   image:
+      //     "https://static01.nyt.com/images/2021/04/28/arts/mitchells1/mitchells1-videoSixteenByNineJumbo1600.jpg",
+      //   preview: mitchellsGif,
+      // },
     },
     projects: {
       portfolio: {
