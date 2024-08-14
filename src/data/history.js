@@ -29,8 +29,8 @@ const data = {
       tealium3: {
         company: "Tealium",
         role: "Software Engineer",
-        years: 3,
-        months: 6,
+        years: 4,
+        months: 8,
         skills: ["React", "React Hooks", "Jest"],
         tools: ["Postman", "Storybook", "Figma", "Jenkins", "JIRA"],
         sequalNum: 3,
@@ -41,7 +41,9 @@ const data = {
           summary:
             "Got a feature in mind? I got you covered! Delivering performant and delightful user experiences to a codebase near you.",
           duties: [
+            "Lead developer of new Tealium iQ profile diff comparison slideout view",
             "Lead developer of new Tealium iQ profile publishing slideout view",
+            "Lead developer of Tealium iQ profile switcher",
             "Implemented user configurable session timeout setting",
             "Implementing new features and designs using React and React hooks",
             "Updating and replacing legacy components with react components",
