@@ -19,7 +19,7 @@ const DetailsCover = styled.div`
   width: 100%;
   height: 32vw;
   min-height: 400px;
-  background: red;
+  background: #181818;
   position: relative;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
